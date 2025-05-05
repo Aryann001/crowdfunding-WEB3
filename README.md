@@ -162,4 +162,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Aryan Baghel**  
-[GitHub](https://github.com/Aryann001) • [LinkedIn](https://www.linkedin.com/in/aryanbaghel)
+[GitHub](https://github.com/Aryann001) • [LinkedIn](https://www.linkedin.com/in/aryan-baghel)
