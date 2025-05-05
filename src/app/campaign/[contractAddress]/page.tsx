@@ -138,7 +138,7 @@ export default function CampaignPage() {
             )}
             <div>
                 <p className="text-lg font-semibold">Tiers:</p>
-                <div className="grid mid:grid-cols-3 grid-cols-1 gap-4">
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
                     {isLoadingTiers ? (
                         <p >Loading...</p>
                     ) : (
