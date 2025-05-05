@@ -7,7 +7,7 @@ import { CROWDFUNDING_FACTORY } from "@/constants/contracts";
 import { useReadContract } from "thirdweb/react";
 import { CampaignCard } from "@/components/CampaignCard";
 
-const page = () => {
+const Home = () => {
   const contract = getContract({
     client: client,
     chain: sepolia,
@@ -43,4 +43,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
