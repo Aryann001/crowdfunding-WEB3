@@ -14,9 +14,8 @@ const Navbar = () => {
     <nav className="bg-slate-100 border-b-2 border-b-slate-300">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <Link
-              href={`/dashboard/${account?.address}`}
+          <Link href={`/dashboard/${account?.address}`} className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div
               className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               <span className="absolute -inset-0.5"></span>
@@ -49,8 +48,8 @@ const Navbar = () => {
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </Link>
-          </div>
+            </div>
+          </Link>
           <div className="flex flex-1 items-center -translate-x-10 justify-center sm:translate-x-0 sm:items-stretch sm:justify-start">
             <Link href={"/"} className="flex flex-shrink-0 items-center">
               <Image
