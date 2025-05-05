@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThirdwebProvider } from "thirdweb/react";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "thirdweb SDK + Next starter",
+  title: "Crowdfunding",
   description:
-    "Starter template for using thirdweb SDK with Next.js App router",
+    "Web3.0 Crowdfunding app by Aryan Baghel",
 };
 
 export default function RootLayout({
@@ -18,8 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThirdwebProvider>{children}</ThirdwebProvider>
+      <body className="bg-slate-100 text-slate-700">
+        <ThirdwebProvider>
+          <Navbar />
+          {children}
+        </ThirdwebProvider>
       </body>
     </html>
   );
